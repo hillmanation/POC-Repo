@@ -7,6 +7,7 @@
 # This script is given without warranty and with the warning the you SHOULD KNOW WHAT YOU ARE DOING
 # before programmatically updating any git based repository with these methods, and is presented here
 # as an example.
+# This method also requires that you have git private keys configured in your local git config.
 
 # Path to local repository
 REPO_DIR="/tmp/repo_directory"
