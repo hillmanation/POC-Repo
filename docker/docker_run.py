@@ -35,24 +35,6 @@ def check_and_pull_images(image_names):  # Check if the requested Docker image i
                 sys.exit(1)
 
 
-def start_container(container, container_name, container_args=None):
-    try:
-        container_start = download_client = client.containers.run(
-                container,  # Docker Image name
-                detach=True,  # Run in detached mode
-                name=container_name,  # Name of Container instance
-                remove=True,  # Remove after container process stops
-                command=container_args
-        )
-        print(
-            f"Started container '{container_name}' @ {datetime.now().strftime('%H:%M:%S')} with ID: "
-            f"{container_start.id}")
-        return container_name  # Return for tracking
-    except docker.errors.APIError as e:
-        print(f"Error starting container '{container_name}': {str(e)}")
-        return None
-
-
 # Start requested container instance
 def start_container(image_name, instance_name=image_name, headless: bool = False, remove_on_stop: bool = False, command_args):
     try:
