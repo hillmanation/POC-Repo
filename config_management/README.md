@@ -4,8 +4,8 @@ This folder will be used for various configuration managment script examples for
 
 #### Planned Items
 
-_Database config managment (In MariaDB, Cassandra, MySQL, etc)_
-_OS level config managment (Like FIPs settings, SELinux, Windows Registry, etc)_
-_Overall config management using a hashtable of desired settings (VMWare's STIG scripts represent this well)_
-_Post product/application install config management_
-_Any repeatable configuration operation_
+_Database config managment (In MariaDB, Cassandra, MySQL, etc)_  
+_OS level config managment (Like FIPs settings, SELinux, Windows Registry, etc)_  
+_Overall config management using a hashtable of desired settings (VMWare's STIG scripts represent this well)_  
+_Post product/application install config management_  
+_Any repeatable configuration operation_  
