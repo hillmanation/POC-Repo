@@ -1,8 +1,9 @@
 #!/bin/sh
 # This script will take a single file that needs pushed to a given repo programmatically
 # This could be leveraged for self updating repos where needed, not a standard practice
-# but useful for applications like, weather tracking from a weather station, gathering
-# specifc data for use in the rest of the repository/etc
+# but useful for applications like, weather tracking from a weather station where you want
+# up to date information available in the repo for other tasks/methods, gathering specific
+# data for use in the rest of the repository/etc.
 # This script is given without warranty and with the warning the you SHOULD KNOW WHAT YOU ARE DOING
 # before programmatically updating any git based repository with these methods, and is presented here
 # as an example.
