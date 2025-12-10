@@ -23,7 +23,7 @@ git pull origin main || { echo "[$(date)] Git pull failed" >> $LOG_FILE; exit 1;
 
 # Only run the repo update if the staging file exists
 if [ -f "$STAGING_FILE" ]; then
-  # Process the staging file and append new entries to manga_list.txt
+  # Process the staging file and commit/push changes to repo
   echo "[$(date)] Processing the staging file..." >> $LOG_FILE
 
   # Commit and push changes to GitHub
