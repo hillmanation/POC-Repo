@@ -16,6 +16,7 @@ LOG_FILE="/var/log/git_updater.log"
 # Navigate to REPO_DIR
 cd $REPO_DIR || { echo "[$(date)] Repository not found" >> $LOG_FILE; exit 1; }
 
+# TODO: This is probably optional and could be removed/have a script argument bool, but in my original use case this was needed so I'm leaving it
 # Fetch the latest changes from the repository
 echo "[$(date)] Fetching changes from GitHub..." >> $LOG_FILE
 git pull origin main || { echo "[$(date)] Git pull failed" >> $LOG_FILE; exit 1; }
